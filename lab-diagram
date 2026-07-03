@@ -1,0 +1,63 @@
+# Network Troubleshooting Lab Diagram
+
+## Basic Network Layout
+
+```text
+User Workstation
+      │
+      │ Ethernet / Wi-Fi
+      │
+Default Gateway / Router
+      │
+      │
+Internet Service Provider
+      │
+      │
+External Websites / Cloud Services
+```
+
+## Lab Testing Flow
+
+```text
+Local Computer
+      ↓
+TCP/IP Stack
+      ↓
+Network Adapter
+      ↓
+IP Address / DHCP
+      ↓
+Default Gateway
+      ↓
+DNS Server
+      ↓
+Internet Destination
+```
+
+## Troubleshooting Path
+
+```text
+Step 1: Check IP configuration
+Step 2: Test loopback address
+Step 3: Test local IP address
+Step 4: Test default gateway
+Step 5: Test external IP address
+Step 6: Test DNS resolution
+Step 7: Trace route to destination
+Step 8: Document findings
+```
+
+## Example Lab Network Information
+
+| Item | Example |
+|---|---|
+| Workstation IP | 192.168.1.25 |
+| Subnet Mask | 255.255.255.0 |
+| Default Gateway | 192.168.1.1 |
+| DNS Server | 192.168.1.1 or 8.8.8.8 |
+| DHCP Range | 192.168.1.100 - 192.168.1.200 |
+| Network Type | Private lab network |
+
+## Purpose
+
+This diagram shows the basic path network traffic takes from a user workstation to an external internet destination. It also helps identify where a network issue may be occurring.
